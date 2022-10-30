@@ -8,48 +8,54 @@
 
 .sidebar {
     position: absolute;
-    background-color: rgb(238, 218, 218);
+    background-color: rgb(8, 68, 133);
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
     transition: transform 0.3s ease-in;
 }
 
 .sidebar nav {
-    padding: 45px;
+    padding: 45px 0px;
+    padding-left: 20px;
+    padding-right: 80px;
 }
 
 .sidebar nav li {
 
     list-style: none;
     font-size: 30px;
-    padding: 33px 0;
+    padding: 13px 0;
+}
+
+.sidebar nav ul {
+    padding: 13px 0;
 }
 
 .sidebar nav li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .sidebar nav li a:hover {
     text-decoration: none;
-    border-bottom: 4px solid rgb(37, 109, 133);
+    border-bottom: 4px solid rgb(88, 163, 255);
     /* border-width: 5px; */
     transition: border-width 0.2s ease-out;
 }
 
 .sidebar nav li a:visited {
     text-decoration: none;
-    border-bottom: 5px solid rgb(37, 109, 133);
+    border-bottom: 5px solid rgb(88, 163, 255);
 }
 
 
 .container {
     display: flex;
-    background-color: rgb(6, 40, 61);
+    background-color: rgb(255, 255, 255);
 }
 
 .InfoContainer {
-    background-color: rgb(37, 109, 133);
+    background-color: rgb(219, 219, 219);
     padding: 50px 50px;
     height: 58vh;
     width: 80vw;
@@ -140,7 +146,7 @@
 .contactform h1 {
     font-family: 'Fira Sans', sans-serif;
     /* padding: 12px 0; */
-    color: rgb(233, 255, 243);
+    color: rgb(0, 0, 0);
 }
 
 .contactform form div {
@@ -157,7 +163,7 @@
 }
 
 .contactform form div label {
-    color: rgb(233, 255, 243);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -201,7 +207,7 @@
 
 /* When the checkbox is checked, add a blue background */
 .Checkcontainer input:checked~.checkmark {
-    background-color: #2196F3;
+    background-color: #0767b6;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -253,7 +259,7 @@
     margin: 20px;
     padding: 20px;
     font-family: 'Fira Sans', sans-serif;
-    background-color: rgb(37, 109, 133);
+    background-color: rgb(219, 219, 219);
     border-radius: 15px;
     color: rgb(6, 40, 61);
 }
@@ -263,7 +269,7 @@
 }
 
 .blogcontainer h1 {
-    color: rgb(233, 255, 243);
+    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -275,10 +281,6 @@ p {
     font-family: 'Source Code Pro', monospace;
 }
 
-/* .intro {
-    margin: 0px;
-    background-color: red;
-} */
 
 .basicInfo h2 {
     font-family: 'Fira Sans', sans-serif;
@@ -290,29 +292,62 @@ p {
     margin: 12px;
 }
 
-.basicInfo {}
-
 .skillcontainer {
-    padding: 12px;
-}
-
-.skillcontainer h2 {
-    font-family: 'Fira Sans', sans-serif;
-    margin: 12px 0;
-}
-
-.skillitem {
+    padding: 0px 12px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+}
+
+.headcontainer h2 {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0px 12px;
+}
+
+.skillItems {
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
+    font-size: 18px;
+    max-width: 120px;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.skill {
-    width: 265px;
-    height: 6px;
-    background-color: red;
-    border: 2px solid black;
+.skillParent {
+    margin: 0px 20px;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillhtml {
+    background-color: rgb(255, 140, 0);
+    width: 280px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.skillcss {
+    background-color: rgb(16, 120, 255);
+    height: 10px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.skilljs {
+    background-color: rgb(5, 112, 9);
+    width: 110px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.skillphp {
+    background-color: rgb(128, 29, 209);
+    border: 1px solid black;
+    width: 160px;
+    height: 10px;
 }
 
 .hundred {
