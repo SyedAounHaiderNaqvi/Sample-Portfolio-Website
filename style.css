@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(238, 218, 218);
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar nav li a:hover {
+    text-decoration: none;
+    border-bottom: 4px solid rgb(37, 109, 133);
+    /* border-width: 5px; */
+    transition: border-width 0.2s ease-out;
+}
+
+.sidebar nav li a:visited {
+    text-decoration: none;
+    border-bottom: 5px solid rgb(37, 109, 133);
+}
+
+
+.container {
+    display: flex;
+    background-color: rgb(6, 40, 61);
+}
+
+.InfoContainer {
+    background-color: rgb(37, 109, 133);
+    padding: 50px 50px;
+    height: 58vh;
+    width: 80vw;
+    margin: 144px 7%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    color: rgb(6, 40, 61);
+}
+
+.infoBase {
+    flex-direction: column;
+}
+
+.devPic img {
+    height: 58vh;
+    border-radius: 50%;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-size: 2em;
+    margin-top: 23px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.buttons {
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 16px;
+    color: white;
+    background-color: rgb(6, 79, 153);
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 3px 3px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0 0 0;
+}
+
+.btn-smsm {
+    font-size: 16px;
+    padding: 7px 13px;
+    margin: 10px 0 0 0;
+}
+
+.btn:hover {
+    background-color: rgb(223, 246, 255);
+    color: rgb(6, 79, 153);
+}
+
+.contactform {
+    padding: 0 34px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 188px 400px;
+}
+
+.contactform h1 {
+    font-family: 'Fira Sans', sans-serif;
+    /* padding: 12px 0; */
+    color: rgb(233, 255, 243);
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+.contactform form div label {
+    color: rgb(233, 255, 243);
+}
+
+
+.Checkcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.Checkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.Checkcontainer:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.Checkcontainer input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.Checkcontainer input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.Checkcontainer .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.contactform form {
+    margin: 0 0px;
+}
+
+#emailHelp {
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogItem {
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(37, 109, 133);
+    border-radius: 15px;
+    color: rgb(6, 40, 61);
+}
+
+.blogcontainer {
+    margin: 88px;
+}
+
+.blogcontainer h1 {
+    color: rgb(233, 255, 243);
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* .intro {
+    margin: 0px;
+    background-color: red;
+} */
+
+.basicInfo h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.basicInfo p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.basicInfo {}
+
+.skillcontainer {
+    padding: 12px;
+}
+
+.skillcontainer h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px 0;
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred {
+    width: 265px;
+    background-color: blueviolet;
+}
+
+.fifty {
+    width: 125px;
+    background-color: aqua;
+}
+
+.t5 {
+    width: 75px;
+    background-color: yellow;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1215px) {
+    * {
+        background-color: red;
+    }
+
+    .devInfo {
+        font-size: 10px;
+    }
+
+    .buttons {
+        font-size: 6px;
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    .intro,
+    .blogContainer,
+    .contactform {
+        margin: 50px 8px;
+    }
+}
